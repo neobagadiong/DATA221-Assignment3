@@ -9,7 +9,7 @@ fig = pyplot.figure(figsize =(10,7))
 
 pyplot.subplot(2,1,1)
 pyplot.title('Distribution of Violent Crimes per Population')
-pyplot.hist(violentCrimesData, bins=18, color='skyblue', edgecolor='black')
+pyplot.hist(violentCrimesData, bins=int(len(violentCrimesData)**0.5), color='skyblue', edgecolor='black') 
 pyplot.ylabel('Frequency')
 pyplot.xlabel("Violent Crimes per Population")
 
